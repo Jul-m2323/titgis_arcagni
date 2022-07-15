@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    box-sizing: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    /*background-image: linear-gradient( 83.2deg, 
+    rgb(103, 63, 163) 10.8%, rgb(77, 69, 189) 94.3% );*/
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+}
+canvas{
+    display: block;
+}
+.nav-button{
+    background-color: #6643b5;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.55);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.nav-button span{
+    font-size: 20px;
+    color: rgb(236, 236, 236);
+}
+.nav-button.active{
+    transform: translateX(-125px);
+}
+
+.link:link{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+.link:active{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+.link:visited{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 15px;
+    margin-top: -30px;
+    margin-right: -35px;
+}
+.links i{
+    width: 35px;
+    height: 35px;
+}
+
+nav{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 1px;
+    background-color:  #6643b5;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out; 
+}
+nav.active{
+    transform: translateX(0);
+}
+
+
+nav ul {
+    padding: 1rem;
+}
+
+nav ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
